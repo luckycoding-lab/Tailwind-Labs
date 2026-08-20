@@ -1,0 +1,378 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+nav {
+  font-family: "Roboto", sans-serif;
+  position: sticky;
+  z-index: 14;
+}
+nav span {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+
+}
+.mySlides {display: none;}
+    img {vertical-align: middle;}
+    
+    
+    /* Slideshow container */
+    .slideshow-container {
+      font-family: "Roboto", sans-serif;
+      max-width: 1000%;
+      position: relative;
+      margin: auto;
+    }
+    
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 8px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    
+    /* Number text (1/4 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 5px;
+      width: 5px;
+      margin: 0 2px;
+      background-color: #4dde2d;
+      border-radius: 50%;
+      display: inline-block;
+      visibility: visible;
+      transition: background-color 0.6s ease;
+    }
+    
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
+    @media only screen and (max-width: 600px) {
+        button.banner-button, .text p {
+            visibility: visible;
+        }
+    }
+    button.banner-button, button.text p {
+        visibility: hidden;
+    }
+    /* Coustome css button */
+    button.banner-button {
+ appearance: none;
+ background-color: #FAFBFC;
+ border: 1px solid rgba(27, 31, 35, 0.15);
+ border-radius: 6px;
+ box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+ box-sizing: border-box;
+ color: #24292E;
+ cursor: pointer;
+ display: inline-block;
+ font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+ font-size: 14px;
+ font-weight: 500;
+ line-height: 20px;
+ list-style: none;
+ padding: 6px 16px;
+ position: relative;
+ transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ vertical-align: middle;
+ white-space: nowrap;
+ word-wrap: break-word;
+}
+
+button.banner-button:hover {
+ background-color: #F3F4F6;
+ text-decoration: none;
+ transition-duration: 0.1s;
+}
+
+button.banner-button:disabled {
+ background-color: #FAFBFC;
+ border-color: rgba(27, 31, 35, 0.15);
+ color: #959DA5;
+ cursor: default;
+}
+
+button.banner-button:active {
+ background-color: #EDEFF2;
+ box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+ transition: none 0s;
+}
+
+button.banner-button:focus {
+ outline: 1px transparent;
+}
+
+button.banner-button:before {
+ display: none;
+}
+
+button.banner-button:-webkit-details-marker {
+ display: none;
+}
+/* the slider content code here */
+                                                      
+
+
+/* Footer CSS */
+.footer * {
+    box-sizing: border-box;
+}
+.footer {
+    padding: 70px 0 0;
+    background-color: rgb(30, 30, 30);
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1em;
+}
+.footer .cont {
+    max-width: 1170px;
+    margin: auto;
+}
+@media only screen and (max-width: 600px) {
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer .row > div:nth-child(1) {
+        width: 100%;
+    }
+    /* #chid {visibility: hidden;} */
+}
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: rgb(255, 255, 255, 1);
+}
+.row ul {
+    width: 100%;
+}
+.footer .row > div:nth-child(1) {
+    width: 100%;
+}
+.footer .row > div {
+    width: 20%;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-grow: 1;
+}
+
+.footer .row p {
+    margin: 20px 0;
+    color: rgb(255, 255, 255, .8);
+    font-size: .9em;
+    line-height: 1.8em;
+}
+
+.footer .row h4 {
+    background-color: #1a5d2e;
+    color: #17b747;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.footer .row ul,
+.footer .row li {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.footer .row li {
+    transform: translateX(-15px);
+}
+.footer .row li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-left: 8px solid #17b747;
+	border-bottom: 5px solid transparent;
+}
+.footer .row li:hover {
+    transform: translateX(0);
+}
+.footer .row ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, .8);
+    margin-left: 15px;
+}
+
+.footer .row .socialButton {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 30px;
+}
+.footer .row .socialButton i {
+    font-size: 28px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    opacity: .6;
+    transform: translateY(0);
+}
+.footer .row .socialButton i:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.footer .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    height: 80px;
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255, .7);
+    font-size: .8em;
+}
+
+
+/* Footer CSS */
+
+/* Menu Bar Styyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyles */
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* background-image: linear-gradient(to bottom, #56ab2f, #a8e063); */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+   
+  }
+  /* CSS */
+  .button-41 {
+    background-color: initial;
+    background-image: linear-gradient(-180deg, #00D775, #00BD68);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,Roboto,"Helvetica Neue",Arial,sans-serif;
+    height: 44px;
+    line-height: 44px;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 100px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 75%;
+    z-index: 9;
+    border: 0;
+  }
+  
+  .button-41:hover {
+    background: #00bd68;
+  }
+  .button-41, svg {
+      vertical-align: middle;
+  }
+  .button-41 svg {
+    margin: 0px;
+    padding: 0%;
+    float: left;
+  }
+  #sign-in {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }

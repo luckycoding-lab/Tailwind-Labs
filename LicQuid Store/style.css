@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@layer base {
+    .gradient-hover-outer {
+        @apply rounded-2xl p-[2px] bg-slate-100 hover:bg-gradient-to-br hover:from-blue-300 hover:via-green-400 hover:bg-red-100;
+    }
+}

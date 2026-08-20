@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Hina Cosmetics</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1, footer p {
+            margin: 0;
+        }
+        header p {
+            margin-top: 5px;
+            font-size: 1.2em;
+        }
+        .section {
+            /* background: #fff; */
+            /* margin: 20px 0; */
+            padding: 20px;
+            border-radius: 5px;
+            /* border: 1px solid #ddd; */
+        }
+        .section h2 {
+            /* border-bottom: 2px solid #4CAF50; */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .section p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 10px;
+            }
+            header, footer {
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+  <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="chg">
+        <img class="h-7 inline" src="/assets/logo.png">
+        <!-- <p id="hid"> Hina Cosmetics</p> -->
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <!-- <ion-icon name="menu" onclick="Menu(this)"></ion-icon> -->
+        <svg name="menu" onclick="Menu(this)" width="30" height="30" fill="green" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 7h5a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2Zm7 8h5a1 1 0 0 1 0 2h-5a1 1 0 0 1 0-2Zm-7-4h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2Z"></path>
+        </svg>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500" style="font-family:Calibri, FontAwesome">
+      
+      <li class="mx-4 my-6 md:my-0">
+      <a href="index.html" class="text-xl hover:text-green-500 duration-500 text-white-700">Home</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="prod.html" class="text-xl hover:text-green-500 duration-500">Products</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="aboutus.html" class="text-xl hover:text-green-500 duration-500 text-green-700">About us!</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="Contact.html" class="text-xl hover:text-green-500 duration-500">Contact</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="#toblog" class="text-xl hover:text-green-500 duration-500">Blogs</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <a href="Sign-in.html" class="text-black text-xl px-5 py-2 rounded-full hover:bg-[#0d7433]">Account</a>
+    </li>
+    <li class="mx-4 my-6 md:my-0">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+      <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" 
+      class="block w-full md:hidden rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
+    </li>
+    
+<h2 class=""></h2>
+  </ul>
+  </nav>
+    
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+          <div class="max-w-2xl">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">At Hina Cosmetics, our leadership team is dedicated to bringing you the best in natural skincare. With a passion for purity and a commitment to excellence, our leaders guide our mission to provide handcrafted, chemical-free products that enhance your natural beauty.</p>
+          </div>
+          <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+            <li>
+              <div class="flex items-center gap-x-6">
+                <img class="h-16 w-16 rounded-full" src="https://images.pexels.com/photos/9507020/pexels-photo-9507020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                <div>
+                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Sarthak Diwakar</h3>
+                  <p class="text-sm font-semibold leading-6 text-green-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </li>
+      
+            <!-- More people... -->
+            <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://images.pexels.com/photos/3600142/pexels-photo-3600142.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Lokesh Kumar</h3>
+                    <p class="text-sm font-semibold leading-6 text-green-600">Cheif Development Officer / CDO</p>
+                  </div>
+                </div>
+              </li>
+        
+              <!-- More people... -->
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://images.pexels.com/photos/3582102/pexels-photo-3582102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Pooja</h3>
+                    <p class="text-sm font-semibold leading-6 text-green-600">Cheif Legal Officer / CLO</p>
+                  </div>
+                </div>
+              </li>
+        
+              <!-- More people... -->
+              <li>
+                <div class="flex items-center gap-x-6">
+                  <img class="h-16 w-16 rounded-full" src="https://images.pexels.com/photos/2809681/pexels-photo-2809681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+                  <div>
+                    <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gaurav</h3>
+                    <p class="text-sm font-semibold leading-6 text-green-600">Cheif Manager Officer / CMO</p>
+                  </div>
+                </div>
+              </li>
+        
+              <!-- More people... -->
+               
+          </ul>
+        </div>
+      </div>
+      
+
+
+
+
+      <!-- main -->
+       <!-- storessssssssssssssss -->
+    <section class="py-10 bg-gray-100 sm:py-16 lg:py-24">
+      <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+          <div class="max-w-2xl mx-auto text-center">
+              <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                🌟 Hina Cosmetics Milestones! 🌟
+              </h2>
+              <p class="mt-3 text-xl leading-relaxed text-gray-600 md:mt-8">We are thrilled to share some exciting milestones with you!</p>
+          </div>
+  
+          <div class="grid grid-cols-1 gap-8 mt-10 text-center lg:mt-24 sm:gap-x-8 md:grid-cols-3">
+              <div>
+                  <h3 class="font-bold text-7xl">
+                      <span class="text-green-600"> 6+ </span>
+                  </h3>
+                  <p class="mt-4 text-xl font-medium text-gray-900">Years in business</p>
+                  <p class="text-base mt-0.5 text-gray-500">Creating the successful path</p>
+              </div>
+  
+              <div>
+                  <h3 class="font-bold text-7xl">
+                      <span class="text-green-600"> 4821 </span>
+                  </h3>
+                  <p class="mt-4 text-xl font-medium text-gray-900">Product delivers delivered</p>
+                  <p class="text-base mt-0.5 text-gray-500">In last 6 years</p>
+              </div>
+  
+              <div>
+                  <h3 class="font-bold text-7xl">
+                      <span class="text-green-600"> 37+ </span>
+                  </h3>
+                  <p class="mt-4 text-xl font-medium text-gray-900">Team members</p>
+                  <p class="text-base mt-0.5 text-gray-500">Working for your success</p>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- storesssssssssssssssssss -->
+      <!-- main -->
+    <div class="container">
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About Us</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Welcome to Hina Cosmetics, where nature meets luxury and your beauty blossoms effortlessly.
+                At Hina Cosmetics, we believe that true beauty lies in simplicity and purity. Our journey began with a simple yet powerful idea: to create skincare products that harness the natural goodness of the earth, free from harmful chemicals and synthetic additives. Every product we offer is meticulously handcrafted with love and care, ensuring that you receive only the best that nature has to offer.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Philosophy</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">We are committed to providing you with skincare that is not only effective but also safe for daily use. Our products are made exclusively with natural ingredients, carefully selected for their beneficial properties. We avoid harmful chemicals, parabens, sulfates, and artificial fragrances, so you can enjoy a beauty routine that is both luxurious and gentle on your skin. Our mission is to bring out your natural radiance with products that respect both your health and the environment.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Handcrafted with Love</h2>
+            <p>Each Hina Cosmetics product is crafted by hand, reflecting our dedication to quality and attention to detail. Our artisans blend traditional methods with modern science to create formulations that nourish, protect, and enhance your natural beauty. From the sourcing of raw materials to the final packaging, every step is carried out with the utmost care and precision. This meticulous process ensures that every jar, bottle, and tube contains the highest quality skincare solutions.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Ingredients</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">We believe in the power of nature to heal and rejuvenate. Our ingredients are sourced from the finest natural sources, including plant extracts, essential oils, and botanicals. We are transparent about our formulations because we want you to feel confident in what you’re putting on your skin. Every ingredient is chosen for its unique benefits, from hydrating and soothing properties to antioxidant and anti-aging effects. Our commitment to using only natural ingredients means you can trust that our products are gentle, effective, and kind to your skin.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sustainability and Ethics</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">At Hina Cosmetics, we are not only passionate about skincare but also about our planet. We are dedicated to sustainable and ethical practices in every aspect of our business. Our packaging is eco-friendly, and we strive to minimize our carbon footprint. We never test on animals, and our products are cruelty-free. We believe that beauty should never come at the expense of our environment or animal welfare.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Promise to You</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">We promise to continue innovating and bringing you the best in natural skincare. Your satisfaction is our top priority, and we are here to support you in your journey to healthy, radiant skin. Our customer service team is always ready to assist you with any questions or concerns.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Join the Hina Family</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Join the Hina Cosmetics family and experience the difference that natural, handcrafted skincare can make. Embrace the simplicity and effectiveness of nature, and let your natural radiance shine through every day. Thank you for choosing Hina Cosmetics, where your beauty is celebrated, and your well-being is our passion.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr style="text-align: center;" width="80%">
+    <!-- From the Blog -->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:mx-0">
+            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              📝 Discover Our Latest Blog Topics! 🌟</h2>
+            <p class="mt-2 text-lg leading-8 text-gray-600">Dive into the world of Hina Cosmetics and explore our latest blog posts covering everything from the science behind our products to seasonal skincare tips. Get inspired, stay informed, and join us on our journey to natural beauty!</p>
+            <p class="text-sm font-semibold leading-6 text-green-600">#HinaCosmetics #Blog #NaturalSkincare #BeautyTips #Sustainability #BehindTheScenes</p>
+          </div>
+          <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <article class="flex max-w-xl flex-col items-start justify-between">
+              <div class="flex items-center gap-x-4 text-xs">
+                <time datetime="2020-03-16" class="text-gray-500">Dec 16, 2026</time>
+                <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+              </div>
+              <div class="group relative">
+                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <a href="#">
+                    <span class="absolute inset-0"></span>
+                    Boost your conversion rate
+                  </a>
+                </h3>
+                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+              </div>
+              <div class="relative mt-8 flex items-center gap-x-4">
+                <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                <div class="text-sm leading-6">
+                  <p class="font-semibold text-gray-900">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Sarthak Diwakar
+                    </a>
+                  </p>
+                  <p class="text-gray-600">Co-Founder / CEO</p>
+                </div>
+              </div>
+            </article>
+            <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2020-03-16" class="text-gray-500">May 21, 2024</time>
+                  <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Boost your conversion rate
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Lokesh Kumar
+                      </a>
+                    </p>
+                    <p class="text-gray-600">Co-Development Officer / CDO</p>
+                  </div>
+                </div>
+              </article>
+              <article class="flex max-w-xl flex-col items-start justify-between">
+                <div class="flex items-center gap-x-4 text-xs">
+                  <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2024</time>
+                  <a href="#" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                </div>
+                <div class="group relative">
+                  <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                    <a href="#">
+                      <span class="absolute inset-0"></span>
+                      Boost your conversion rate
+                    </a>
+                  </h3>
+                  <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
+                </div>
+                <div class="relative mt-8 flex items-center gap-x-4">
+                  <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" class="h-10 w-10 rounded-full bg-gray-50">
+                  <div class="text-sm leading-6">
+                    <p class="font-semibold text-gray-900">
+                      <a href="#">
+                        <span class="absolute inset-0"></span>
+                        Pooja
+                      </a>
+                    </p>
+                    <p class="text-gray-600">Co-Legal Officer / CLO</p>
+                  </div>
+                </div>
+              </article>
+      
+            <!-- More posts... -->
+          </div>
+        </div>
+      </div>
+      
+     <!-- From the Blog -->
+      <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="relative isolate overflow-hidden bg-green-600 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+        <p class="mt-4 text-lg leading-8 text-gray-300">Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt dolore.</p>
+        <div class="mt-6 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">Email address</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="Enter your email">
+          <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">Weekly articles</dt>
+          <dd class="mt-2 leading-7 text-gray-400">Non laboris consequat cupidatat laborum magna. Eiusmod non irure cupidatat duis commodo amet.</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">No spam</dt>
+          <dd class="mt-2 leading-7 text-gray-400">Officia excepteur ullamco ut sint duis proident non adipisicing. Voluptate incididunt anim.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+</div>
+
+<!-- fooooooter -->
+<section class="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
+            <div>
+                <p class="text-base text-gray-500">Company</p>
+  
+                <ul class="mt-8 space-y-4">
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> About </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Features </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Works </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Career </a>
+                    </li>
+                </ul>
+            </div>
+  
+            <div>
+                <p class="text-base text-gray-500">Help</p>
+  
+                <ul class="mt-8 space-y-4">
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Customer Support </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Delivery Details </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Terms & Conditions </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Privacy Policy </a>
+                    </li>
+                </ul>
+            </div>
+  
+            <div>
+                <p class="text-base text-gray-500">Resources</p>
+  
+                <ul class="mt-8 space-y-4">
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Free eBooks </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Development Tutorial </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> How to - Blog </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> YouTube Playlist </a>
+                    </li>
+                </ul>
+            </div>
+  
+            <div>
+                <p class="text-base text-gray-500">Extra Links</p>
+  
+                <ul class="mt-8 space-y-4">
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Customer Support </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Delivery Details </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Terms & Conditions </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Privacy Policy </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  
+        <hr class="mt-16 mb-10 border-gray-800" />
+  
+        <div class="flex flex-wrap items-center justify-between">
+            <img class="h-8 auto md:order-1" src="/assets/logo.png" alt="" />
+  
+            <ul class="flex items-center space-x-3 md:order-3">
+                <li>
+                    <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+  
+                <li>
+                    <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                        </svg>
+                    </a>
+                </li>
+  
+                <li>
+                    <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                            <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                            <path
+                                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+  
+                <li>
+                    <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                            ></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+  
+            <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">© Copyright 2024, All Rights Reserved by Hina Cosmetics
+            </p>
+        </div>
+    </div>
+  </section>
+   
+
+</body>
+</html>

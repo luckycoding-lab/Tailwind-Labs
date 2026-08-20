@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hina Cosmetics</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- my script code here -->
+         <script src="script.js"></script>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <link rel="stylesheet" href="style.css">
+         <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</head>
+<body>
+    
+    <nav class="p-5 bg-white shadow md:flex md:items-center md:justify-between">
+        <div class="flex justify-between items-center ">
+          <span class="chg">
+            <img class="h-7 inline" src="/assets/logo.png">
+            <!-- <p id="hid"> Hina Cosmetics</p> -->
+          </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <!-- <ion-icon name="menu" onclick="Menu(this)"></ion-icon> -->
+            <svg name="menu" onclick="Menu(this)" width="30" height="30" fill="green" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6 7h5a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2Zm7 8h5a1 1 0 0 1 0 2h-5a1 1 0 0 1 0-2Zm-7-4h12a1 1 0 0 1 0 2H6a1 1 0 0 1 0-2Z"></path>
+            </svg>
+          </span>
+        </div>
+    
+        <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500" style="font-family:Calibri, FontAwesome">
+          
+          <li class="mx-4 my-6 md:my-0">
+          <a href="index.html" class="text-xl hover:text-green-500 duration-500 text-white-700">Home</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="prod.html" class="text-xl hover:text-green-500 duration-500 text-green-700">Products</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="aboutus.html" class="text-xl hover:text-green-500 duration-500">About us!</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="Contact.html" class="text-xl hover:text-green-500 duration-500">Contact</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#toblog" class="text-xl hover:text-green-500 duration-500">Blogs</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="Sign-in.html" class="text-black text-xl px-5 py-2 rounded-full hover:bg-[#0d7433]">Account</a>
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+          <input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" 
+          class="block w-full md:hidden rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-green-600 sm:text-sm sm:leading-6" />
+        </li>
+        
+    <h2 class=""></h2>
+      </ul>
+      </nav>
+      <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    theme: {
+      extend: {
+        gridTemplateRows: {
+          '[auto,auto,1fr]': 'auto auto 1fr',
+        },
+      },
+    },
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+    <div class="pt-6">
+      <nav aria-label="Breadcrumb">
+        <ol role="list" class="mx-auto flex max-w-2xl items-center space-x-2 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+          <li>
+            <div class="flex items-center">
+              <a href="#" class="mr-2 text-sm font-medium text-gray-900">Products</a>
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <a href="#" class="mr-2 text-sm font-medium text-gray-900">Hina Kits</a>
+              <svg width="16" height="20" viewBox="0 0 16 20" fill="currentColor" aria-hidden="true" class="h-5 w-4 text-gray-300">
+                <path d="M5.697 4.34L8.98 16.532h1.327L7.025 4.341H5.697z" />
+              </svg>
+            </div>
+          </li>
+  
+          <li class="text-sm">
+            <a href="#" aria-current="page" class="font-medium text-gray-500 hover:text-gray-600">Skincare</a>
+          </li>
+        </ol>
+      </nav>
+  
+      <!-- Image gallery -->
+      <div class="mx-auto mt-6 max-w-2xl sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-x-8 lg:px-8">
+        <div class="aspect-h-4 aspect-w-3 hidden overflow-hidden rounded-lg lg:block">
+          <img src="/assets/banner img/1 (1).jpg" alt="Two each of gray, white, and black shirts laying flat." class="h-full w-full object-cover object-center">
+        </div>
+        <div class="hidden lg:grid lg:grid-cols-1 lg:gap-y-8">
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+            <img src="/assets/h_mock/1.jpg" alt="Model wearing plain black basic tee." class="h-full w-full object-cover object-center">
+          </div>
+          <div class="aspect-h-2 aspect-w-3 overflow-hidden rounded-lg">
+            <img src="/assets/h_mock/2.jpg" alt="Model wearing plain gray basic tee." class="h-full w-full object-cover object-center">
+          </div>
+        </div>
+        <div class="aspect-h-5 aspect-w-4 lg:aspect-h-4 lg:aspect-w-3 sm:overflow-hidden sm:rounded-lg">
+          <img src="/assets/h_mock/3.jpg" alt="Model wearing plain white basic tee." class="h-full w-full object-cover object-center">
+        </div>
+      </div>
+  
+      <!-- Product info -->
+      <div class="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6 lg:grid lg:max-w-7xl lg:grid-cols-3 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8 lg:px-8 lg:pb-24 lg:pt-16">
+        <div class="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8">
+          <h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Hina Cosmetic NeemFace Wash</h1>
+        </div>
+  
+        <!-- Options -->
+        <div class="mt-4 lg:row-span-3 lg:mt-0">
+          <h2 class="sr-only">Product information</h2>
+          <p class="text-3xl tracking-tight text-gray-900">INR.1999.00/-</p>
+  
+          <!-- Reviews -->
+          <div class="mt-6">
+            <a href="#tocomm" target="_blank" rel="noopener noreferrer">
+            <h3 class="sr-only">Reviews</h3></a>
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <!-- Active: "text-gray-900", Default: "text-gray-200" -->
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+                <svg class="h-5 w-5 flex-shrink-0 text-gray-200" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10.868 2.884c-.321-.772-1.415-.772-1.736 0l-1.83 4.401-4.753.381c-.833.067-1.171 1.107-.536 1.651l3.62 3.102-1.106 4.637c-.194.813.691 1.456 1.405 1.02L10 15.591l4.069 2.485c.713.436 1.598-.207 1.404-1.02l-1.106-4.637 3.62-3.102c.635-.544.297-1.584-.536-1.65l-4.752-.382-1.831-4.401z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <p class="sr-only">4 out of 5 stars</p>
+              <a href="#" class="ml-3 text-sm font-medium text-green-600 hover:text-green-500">117 reviews</a>
+            </div>
+          </div>
+  
+          <form class="mt-10">
+            <!-- Colors -->
+            <div>
+              <h3 class="text-sm font-medium text-gray-900">Color</h3>
+  
+              <fieldset aria-label="Choose a color" class="mt-4">
+                <div class="flex items-center space-x-3">
+                  <!-- Active and Checked: "ring ring-offset-1" -->
+                  <label aria-label="White" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-none">
+                    <input type="radio" name="color-choice" value="green" class="sr-only">
+                    <span aria-hidden="true" class="h-8 w-8 rounded-full border border-black border-opacity-10 bg-green-400"></span>
+                  </label>
+                  <!-- Active and Checked: "ring ring-offset-1" -->
+                  <label aria-label="Gray" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-400 focus:outline-none">
+                    <input type="radio" name="color-choice" value="Gray" class="sr-only">
+                    <span aria-hidden="true" class="h-8 w-8 rounded-full border border-black border-opacity-10 bg-red-300"></span>
+                  </label>
+                  <!-- Active and Checked: "ring ring-offset-1" -->
+                  <label aria-label="Black" class="relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 ring-gray-900 focus:outline-none">
+                    <input type="radio" name="color-choice" value="Black" class="sr-only">
+                    <span aria-hidden="true" class="h-8 w-8 rounded-full border border-black border-opacity-10 bg-yellow-500">
+                    </span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+  
+            <!-- Sizes -->
+            <div class="mt-10">
+              <div class="flex items-center justify-between">
+                <h3 class="text-sm font-medium text-gray-900">Size</h3>
+                <a href="#" class="text-sm font-medium text-green-600 hover:text-green-500">Size guide</a>
+              </div>
+  
+              <fieldset aria-label="Choose a size" class="mt-4">
+                <div class="grid grid-cols-4 gap-4 sm:grid-cols-8 lg:grid-cols-4">
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-not-allowed items-center justify-center rounded-md border bg-gray-50 px-4 py-3 text-sm font-medium uppercase text-gray-200 hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XXS" disabled class="sr-only">
+                    <span>10mg</span>
+                    <span aria-hidden="true" class="pointer-events-none absolute -inset-px rounded-md border-2 border-gray-200">
+                      <svg class="absolute inset-0 h-full w-full stroke-2 text-gray-200" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="currentColor">
+                        <line x1="0" y1="100" x2="100" y2="0" vector-effect="non-scaling-stroke" />
+                      </svg>
+                    </span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XS" class="sr-only">
+                    <span>50mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="S" class="sr-only">
+                    <span>100mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="M" class="sr-only">
+                    <span>150mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="L" class="sr-only">
+                    <span>175mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="XL" class="sr-only">
+                    <span>200mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="2XL" class="sr-only">
+                    <span>500mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                  <!-- Active: "ring-2 ring-indigo-500" -->
+                  <label class="group relative flex cursor-pointer items-center justify-center rounded-md border bg-white px-4 py-3 text-sm font-medium uppercase text-gray-900 shadow-sm hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6">
+                    <input type="radio" name="size-choice" value="3XL" class="sr-only">
+                    <span>800mg</span>
+                    <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                    <span class="pointer-events-none absolute -inset-px rounded-md" aria-hidden="true"></span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+  
+            <button type="submit" class="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">Add to bag</button>
+          </form>
+        </div>
+  
+        <div class="py-10 lg:col-span-2 lg:col-start-1 lg:border-r lg:border-gray-200 lg:pb-16 lg:pr-8 lg:pt-6">
+          <!-- Description and details -->
+          <div>
+            <h3 class="sr-only">Description</h3>
+  
+            <div class="space-y-6">
+              <p class="text-base text-gray-900">Neem, also known as Indian lilac, has been revered in traditional skincare for centuries due to its powerful antibacterial, antifungal, and anti-inflammatory properties. Our Neem Face Wash leverages these benefits to give you a clean, clear, and refreshed complexion.</p>
+            </div>
+          </div>
+  
+          <div class="mt-10">
+            <h3 class="text-sm font-medium text-gray-900">Key Benefit</h3>
+  
+            <div class="mt-4">
+              <ul role="list" class="list-disc space-y-2 pl-4 text-sm">
+                <li class="text-gray-400"><span class="text-gray-600"><strong>Deep Cleansing:</strong></span>
+                    Our Neem Face Wash effectively removes dirt, excess oil, and impurities from your skin, preventing clogged pores and reducing the risk of acne breakouts.
+                </li>
+                <li class="text-gray-400"><span class="text-gray-600"><strong>Anti-Acne Action:</strong></span>
+                    Neem's natural antibacterial properties help to combat acne-causing bacteria, reduce inflammation, and soothe irritated skin.
+                </li>
+                <li class="text-gray-400"><span class="text-gray-600"><strong>Natural Hydration:</strong></span>
+                    Unlike harsh chemical cleansers, our Neem Face Wash maintains your skin’s natural moisture balance, leaving it hydrated and soft.
+                </li>
+                <li class="text-gray-400"><span class="text-gray-600"><strong>Skin Purification:</strong></span>
+                    Neem's purifying properties help detoxify your skin, promoting a clearer and more radiant complexion.
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="mt-10">
+            <h2 class="text-sm font-medium text-gray-900">Details</h2>
+  
+            <div class="mt-4 space-y-6">
+              <p class="text-sm text-gray-600">Experience the natural purity of Hina Cosmetics Neem Face Wash, formulated to cleanse, purify, and rejuvenate your skin. Enriched with neem, this face wash effectively removes impurities, controls excess oil, and prevents acne, leaving your skin feeling fresh and radiant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+        <div class="absolute inset-0 -z-10 overflow-hidden">
+          <svg class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+            <defs>
+              <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+              <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" stroke-width="0" />
+            </svg>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+          </svg>
+        </div>
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="lg:max-w-lg">
+                <p class="text-base font-semibold leading-7 text-green-600">Natural Face Pack</p>
+                <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Experience Radiant Skin with Hina Cosmetics' Natural Face Pack</h1>
+                <p class="mt-6 text-xl leading-8 text-gray-700">At Hina Cosmetics, we believe that nature holds the key to beautiful, radiant skin. Our Natural Face Pack is a testament to this belief, crafted with the finest natural ingredients to provide your skin with the nourishment it deserves. Whether you're looking to rejuvenate your skin, clear up blemishes, or simply indulge in a luxurious self-care ritual, our face pack is the perfect addition to your skincare routine..</p>
+              </div>
+            </div>
+          </div>
+          <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-0 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+            <!-- <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]" 
+            src="/assets/h_mock/1.jpg" alt=""> -->
+            <img src="/assets/h_mock/1.jpg" alt="" class="rounded-md">
+            <br>
+            <img src="/assets/banner img/1 (1).jpg" alt="" class="rounded-md">
+          </div>
+          <div class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+            <div class="lg:pr-4">
+              <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                <h2 class="text-base font-semibold leading-7 text-green-600">Why Choose Hina Cosmetics Face Pack?</h2>
+                <p class="mt-6 text-xl leading-8 text-gray-700">Our face pack is meticulously crafted to deliver numerous benefits for your skin:</p>
+                <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                  <li class="flex gap-x-3">
+                    <!-- <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z" clip-rule="evenodd" />
+                    </svg> -->
+                    <span><strong class="font-semibold text-gray-900">1.Deep Cleansing:</strong> Removes impurities and excess oil, leaving your skin clean and clear.</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <!-- <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+                    </svg> -->
+                    <span><strong class="font-semibold text-gray-900">2.Hydration Boost:</strong>  Infused with natural moisturizers that hydrate and nourish your skin.</span>
+                  </li>
+                  <li class="flex gap-x-3">
+                    <!-- <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                      <path fill-rule="evenodd" d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z" clip-rule="evenodd" />
+                    </svg> -->
+                    <span><strong class="font-semibold text-gray-900">3.Brightening Effect:</strong> Helps to lighten dark spots and even out your skin tone.</span>
+                  </li>
+                </ul>
+                <p class="mt-8">Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis odio id et. Id blandit molestie auctor fermentum dignissim. Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate et ultrices hac adipiscing egestas. Iaculis convallis ac tempor et ut. Ac lorem vel integer orci.</p>
+                <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">How to Use Hina Cosmetics Face Pack.</h2>
+                <p class="mt-6">Using our face pack is simple and easy:</p>
+                <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                    <li class="flex gap-x-1">
+                        <strong>1)</strong>Cleanse your face thoroughly with a gentle cleanser.
+                    </li>
+                    <li class="flex gap-x-1"><strong>2)</strong>
+                        Mix the face pack with rose water or plain water to form a smooth paste.
+                    </li>
+                    <li class="flex gap-x-1"><strong>3)</strong>
+                        Apply an even layer to your face, avoiding the eye area.
+
+                    </li>
+                    <li class="flex gap-x-1"><strong>4)</strong>
+                        Leave it on for 15-20 minutes or until it dries completely.
+                    </li>
+                    <li class="flex gap-x-1"><strong>5)</strong>
+                        Rinse off with lukewarm water, gently massaging in circular motions.
+
+                    </li>
+                    <li class="flex gap-x-1"><strong>6)</strong>
+                        Pat your face dry and follow up with your favorite moisturizer.
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="py-10 bg-white sm:py-16 lg:py-20">
+        <div class="max-w-5xl px-4 mx-auto sm:px-6 lg:px-8">
+            <div class="text-center lg:flex lg:items-center lg:justify-between lg:text-left">
+                <h2 class="text-4xl font-bold text-black lg:max-w-md">Stay Updated with Hina Cosmetics!</h2>
+    
+                <form action="#" method="POST" class="px-10 mt-8 lg:mt-0 lg:px-0">
+                    <div class="sm:flex sm:justify-center lg:justify-end">
+                        <div>
+                            <label for="email" class="sr-only"></label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="Enter email to get started"
+                                class="block w-full px-4 py-4 text-base text-black placeholder-gray-500 transition-all duration-200 border-gray-200 rounded-md sm:rounded-r-none caret-green-600 focus:border-green-600 focus:ring-1 focus:ring-green-600"
+                                required
+                            />
+                        </div>
+                        <button type="submit" class="inline-flex items-center justify-center flex-shrink-0 w-full px-4 py-4 mt-4 font-semibold text-white transition-all duration-200 bg-green-600 border border-transparent rounded-md sm:mt-0 sm:rounded-l-none sm:w-auto hover:bg-green-700 focus:bg-green-700">
+                            Get Started Free
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+        <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/aspect-ratio'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+        <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
+        <br>
+  
+      <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/assets/banner img/1 (8).jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Earthen Bottle</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">INR.1999.00/-</p>
+        </a>
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/assets/banner img/1 (7).jpg" alt="Olive drab green insulated bottle with flared screw lid and flat top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Nomad Tumbler</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">INR.1999.00/-</p>
+        </a>
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/assets/banner img/1 (4).jpg" alt="Person using a pen to cross a task off a productivity paper card." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Focus Paper Refill</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">INR.1999.00/-</p>
+        </a>
+        <a href="#" class="group">
+          <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+            <img src="/assets/banner img/1 (2).jpg" alt="Hand holding black machined steel mechanical pencil with brass tip and top." class="h-full w-full object-cover object-center group-hover:opacity-75">
+          </div>
+          <h3 class="mt-4 text-sm text-gray-700">Machined Mechanical Pencil</h3>
+          <p class="mt-1 text-lg font-medium text-gray-900">INR.1999.00/-</p>
+        </a>
+  
+        <!-- More products... -->
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+
+      <section class="py-10 bg-white sm:py-16 lg:py-24" id="tocomm">
+          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+              <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Comments from the our Coustomers</h1>
+              <p class="mt-2 tracking-tight text-gray-500">Hear what our satisfied customers have to say about their experiences with Hina Cosmetics. Discover how our natural products have transformed their skincare routines!
+
+                <span style="color: green;">#HinaCosmetics #CustomerFeedback #NaturalBeauty #SkincareSuccess</span>
+            </p>
+              <br>
+              <div class="grid grid-cols-1 gap-6 lg:gap-10 sm:grid-cols-2 md:grid-cols-3">
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">I've been using Hina Cosmetics for a month now, and my skin has never felt better! The natural ingredients really make a difference. 🌿✨
+                                   <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-1.jpg" alt="" />
+                                <div class="ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Devon Lane</p>
+                                    <p class="text-base text-gray-500 truncate">President of Sales</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">Loving my daily routine with Hina Cosmetics. Knowing that everything is handcrafted and free from harmful chemicals gives me peace of mind. 💖
+                                    <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                 </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-2.jpg" alt="" />
+                                <div class="min-w-0 ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Ronald Richards</p>
+                                    <p class="text-base text-gray-500 truncate">Marketing Coordinator</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">Finally found a brand that aligns with my values. Hina Cosmetics' products are pure, effective, and luxurious. My skin is glowing! ✨
+                                    <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                 </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-3.jpg" alt="" />
+                                <div class="min-w-0 ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Jane Cooper</p>
+                                    <p class="text-base text-gray-500 truncate">Dog Trainer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">Hina Cosmetics has completely transformed my skincare routine. The natural ingredients work wonders, and I feel so much more confident in my skin. 🌸
+                                    <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                 </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-4.jpg" alt="" />
+                                <div class="min-w-0 ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Theresa Webb</p>
+                                    <p class="text-base text-gray-500 truncate">Web Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">I can't get enough of Hina Cosmetics! The quality and care that go into each product are evident. My skin feels amazing every day. 💚
+                                    <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                 </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-5.jpg" alt="" />
+                                <div class="min-w-0 ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Darlene Robertson</p>
+                                    <p class="text-base text-gray-500 truncate">Medical Assistant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="flex flex-col bg-white border border-gray-200 rounded-md">
+                    <div class="flex flex-col justify-between flex-1 p-8">
+                        <div class="flex-1">
+                            <blockquote>
+                                <p class="text-lg text-gray-800">Switching to Hina Cosmetics was the best decision I made for my skin. No more irritation, just pure, natural goodness. 🌿
+                                    <span style="color: green;">#PureBeauty #HinaCosmetics</span> 
+                                 </p>
+                            </blockquote>
+                        </div>
+    
+                        <div class="mt-8">
+                            <div class="w-full h-0 mb-8 border-t-2 border-gray-200 border-dotted"></div>
+                            <div class="flex items-center">
+                                <img class="flex-shrink-0 object-cover w-10 h-10 rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/8/avatar-6.jpg" alt="" />
+                                <div class="min-w-0 ml-3">
+                                    <p class="text-base font-semibold text-gray-800 truncate">Floyd Miles</p>
+                                    <p class="text-base text-gray-500 truncate">Nursing Assistant</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+      <section class="py-10 bg-gray-900 sm:pt-16 lg:pt-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-2 gap-x-5 gap-y-12 md:grid-cols-4 md:gap-x-12">
+                <div>
+                    <p class="text-base text-gray-500">Company</p>
+      
+                    <ul class="mt-8 space-y-4">
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> About </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Features </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Works </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Career </a>
+                        </li>
+                    </ul>
+                </div>
+      
+                <div>
+                    <p class="text-base text-gray-500">Help</p>
+      
+                    <ul class="mt-8 space-y-4">
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Customer Support </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Delivery Details </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Terms & Conditions </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Privacy Policy </a>
+                        </li>
+                    </ul>
+                </div>
+      
+                <div>
+                    <p class="text-base text-gray-500">Resources</p>
+      
+                    <ul class="mt-8 space-y-4">
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Free eBooks </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Development Tutorial </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> How to - Blog </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> YouTube Playlist </a>
+                        </li>
+                    </ul>
+                </div>
+      
+                <div>
+                    <p class="text-base text-gray-500">Extra Links</p>
+      
+                    <ul class="mt-8 space-y-4">
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Customer Support </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Delivery Details </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Terms & Conditions </a>
+                        </li>
+                        <li>
+                            <a href="#" title="" class="text-base text-white transition-all duration-200 hover:text-opacity-80 focus:text-opacity-80"> Privacy Policy </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+      
+            <hr class="mt-16 mb-10 border-gray-800" />
+      
+            <div class="flex flex-wrap items-center justify-between">
+                <img class="h-8 auto md:order-1" src="/assets/logo.png" alt="" />
+      
+                <ul class="flex items-center space-x-3 md:order-3">
+                    <li>
+                        <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+      
+                    <li>
+                        <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                            </svg>
+                        </a>
+                    </li>
+      
+                    <li>
+                        <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                                <circle cx="16.806" cy="7.207" r="1.078"></circle>
+                                <path
+                                    d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+      
+                    <li>
+                        <a href="#" title="" class="flex items-center justify-center text-white transition-all duration-200 bg-transparent border border-gray-700 rounded-full w-7 h-7 focus:bg-blue-600 hover:bg-blue-600 hover:border-blue-600 focus:border-blue-600">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+                                ></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+      
+                <p class="w-full mt-8 text-sm text-center text-gray-100 md:mt-0 md:w-auto md:order-2">© Copyright 2024, All Rights Reserved by Hina Cosmetics
+                </p>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
