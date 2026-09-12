@@ -6,7 +6,7 @@ A curated collection of modern, responsive web layouts and interactive storefron
 
 ## 📸 Preview
 
-![LicQuid Store Banner](./LicQuid%20Store/assets/banner.png)
+![LicQuid Store Banner](./LicQuid%20Store/assets/website%20banenr.png)
 
 > Replace `banner.png` with the exact image filename inside your `LicQuid Store/assets` folder (e.g., `banner.jpg`, `hero.png`).
 
